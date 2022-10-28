@@ -1,0 +1,30 @@
+
+{% extends 'base.html' %}
+
+{% block head %} 
+
+{% endblock %}
+
+{% block body %} 
+
+<form action="{{ url_for('signin') }}" method="post"
+class="login-form">
+<h1 class="sign-in">Sign In</h1>
+<img class="home-image" src="/static/images/sally.png" width="300" height="300"/>
+<br>
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="inputGroup-sizing-default">Email</span>
+    </div>
+    <input type="text" name="email" class="form-control email" aria-label="Default" aria-describedby="inputGroup-sizing-default" required>
+  </div>
+
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-default">Password</span>
+    </div>
+    <input type="password" name="password" class="form-control password" aria-label="Default" aria-describedby="inputGroup-sizing-default" required>
+</div>
+<input type="submit" class="btn btn-primary">
+</form>
+{% endblock %}

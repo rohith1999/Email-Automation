@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body{
+    font-family: Montserrat
+}
+
+
+
+.logo{
+    margin: 5%;
+}
+.sign-in{
+ text-align: center;   
+}
+
+.login-form{
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.filter-container{
+    margin: 1%;
+    width: 100%;
+    
+}
+
+.list-group-item{
+    margin: .5%;
+}
+
+.home-image{
+    object-fit: cover;
+}
